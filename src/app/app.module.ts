@@ -10,6 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderSecondaryComponent } from './header-secondary/header-secondary.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderSecondaryComponent } from './header-secondary/header-secondary.co
     LayoutComponent,
     PageNotFoundComponent,
     HeaderComponent,
-    HeaderSecondaryComponent
+    HeaderSecondaryComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
