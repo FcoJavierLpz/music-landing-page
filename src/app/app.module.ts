@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeaderComponent } from './header/header.component';
 import { HeaderSecondaryComponent } from './header-secondary/header-secondary.component';
 import { PlayerComponent } from './player/player.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PlayerComponent } from './player/player.component';
     PageNotFoundComponent,
     HeaderComponent,
     HeaderSecondaryComponent,
-    PlayerComponent
+    PlayerComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
