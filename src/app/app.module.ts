@@ -8,13 +8,17 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './header/header.component';
+import { HeaderSecondaryComponent } from './header-secondary/header-secondary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LayoutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent,
+    HeaderSecondaryComponent
   ],
   imports: [
     BrowserModule,
