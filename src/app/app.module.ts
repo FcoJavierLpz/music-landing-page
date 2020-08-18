@@ -13,6 +13,9 @@ import { HeaderSecondaryComponent } from './header-secondary/header-secondary.co
 import { PlayerComponent } from './player/player.component';
 import { RegisterComponent } from './register/register.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +25,17 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     HeaderSecondaryComponent,
     PlayerComponent,
-    RegisterComponent
+    RegisterComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAr0HIdLINOcZHIZVKtPI4__a-QjFpIPP8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
