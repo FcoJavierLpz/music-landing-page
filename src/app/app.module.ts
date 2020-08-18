@@ -15,6 +15,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { MapComponent } from './map/map.component';
     BrowserAnimationsModule,
     MaterialModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAr0HIdLINOcZHIZVKtPI4__a-QjFpIPP8'
+      apiKey: environment.GM_API_KEY
     })
   ],
   providers: [],

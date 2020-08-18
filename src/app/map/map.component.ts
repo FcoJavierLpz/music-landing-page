@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-map',
@@ -11,11 +12,10 @@ export class MapComponent implements OnInit {
   lng:number;
 
   constructor(){
-    if (navigator)
-    {
-    navigator.geolocation.getCurrentPosition( pos => {
-        this.lng = +pos.coords.longitude;
-        this.lat = +pos.coords.latitude;
+    if (navigator) {
+      navigator.geolocation.getCurrentPosition( pos => {
+        this.lng = pos.coords.longitude;
+        this.lat = pos.coords.latitude;
       });
     }
   }
