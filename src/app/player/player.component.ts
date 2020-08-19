@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
   files: Array<any> = [
-    { name: 'First Song', artist: 'Inder' },
-    { name: 'Second Song', artist: 'You' },
+    { name: 'be yourself', artist: 'AudioSlave' },
+    { name: 'Any colour you like', artist: 'Pink Floyd' },
   ];
   state;
   currentFile: any = {};

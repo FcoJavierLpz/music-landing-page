@@ -2,9 +2,18 @@
 
 .row {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  // justify-content: space-evenly;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.col-sm-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
 
 app-map {
   width: 50%;

@@ -1,62 +1,52 @@
-.container {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.player {
+  width: 40vw;
+  background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+  background-blend-mode: overlay, hard-light, normal;
 
-  .player {
-    width: 30vw;
-    background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-    background-blend-mode: overlay, hard-light, normal;
-
-    @media only screen and (max-width: 56.25em) {
-      width: 100%;
-    }
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
   }
+}
 
-  .main-toolbar {
-    .spacer {
-      flex: 1 1 auto;
-    }
-    .toolbar-btn {
-      font-size: 1rem;
-      margin-right: 5px;
-      cursor: pointer;
-    }
+.main-toolbar {
+  .spacer {
+    flex: 1 1 auto;
   }
-
-  .content {
-    .logo {
-      margin: 2.5rem;
-      text-align: center;
-      font-size: 1.2rem;
-      color: #fff;
-      .mat-icon {
-        height: 5rem !important;
-        width: 5rem !important;
-        font-size: 5rem !important;
-      }
-    }
+  .toolbar-btn {
+    font-size: 1rem;
+    margin-right: 5px;
+    cursor: pointer;
   }
+}
 
-  .media-footer {
-    .time-slider {
-      width: 100% !important;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .media-action-bar {
-      width: 100%;
-      padding: 2.5rem;
-      justify-content: center;
-      .mat-icon {
-        height: 48px !important;
-        width: 48px !important;
-        font-size: 48px !important;
-      }
+.content {
+  .logo {
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    .mat-icon {
+      height: 5rem !important;
+      width: 5rem !important;
+      font-size: 5rem !important;
     }
   }
 }
-// h3, h4, h5, h6 {
-//   color: #7b1fa2;
-// }
+
+.media-footer {
+  .time-slider {
+    width: 100% !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .media-action-bar {
+    width: 100%;
+    padding: 2.5rem;
+    justify-content: center;
+    .mat-icon {
+      height: 48px !important;
+      width: 48px !important;
+      font-size: 48px !important;
+    }
+  }
+}
