@@ -26,7 +26,7 @@
 .u-margin-top-big {
   margin-top: 3rem !important;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     margin-bottom: 6rem !important;
   }
 }

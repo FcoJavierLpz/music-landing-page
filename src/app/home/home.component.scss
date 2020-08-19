@@ -1,4 +1,5 @@
 @import 'abstracts/mixins';
+@import 'abstracts/variables';
 
 .row {
   display: flex;
@@ -8,15 +9,25 @@
 
 .media-register {
   height: 44rem;
+  @include respond(tab-port) {
+    height: auto;
+    margin-top: 1rem;
+  }
 }
 
 .col-sm-6 {
   flex-basis: 50%;
   max-width: 50%;
+
+  @include respond(tab-port) {
+    margin: 2rem 0;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 #particles-js {
-  background-color: #30138b;
+  background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-primary-dark);
   position: absolute;
   top: 0;
   left: 0;
