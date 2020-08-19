@@ -1,4 +1,8 @@
-.ui-center-sm {
+.u-center-text {
+  text-align: center !important;
+}
+
+.ui-center {
   justify-content: center;
   text-align: center;
 }
@@ -20,7 +24,11 @@
   }
 }
 .u-margin-top-big {
-  margin-top: 8rem !important;
+  margin-top: 3rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
 }
 .u-margin-top-huge {
   margin-top: 10rem !important;

@@ -1,9 +1,27 @@
-.bg-form  {
-  width: 50vw;
-  display: flex;
+@import 'abstracts/variables';
+
+.login-wrapper {
+  height: 100%;
 }
 
-.form-input {
-  color: red
+mat-card {
+  height: 100%;
+  background: none;
+  background-image: linear-gradient(to right bottom,
+                    rgba($color-secondary-light, .4),
+                    rgba($color-secondary-dark, .6));
 }
 
+.mat-card-header .mat-card-title {
+  margin-bottom: 2rem;
+}
+
+.mat-form-field {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+
+// .mat-form-field.mat-focused .mat-form-field-label {
+//   color: $color-secondary-dark;
+// }

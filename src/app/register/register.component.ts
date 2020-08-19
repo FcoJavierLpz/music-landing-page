@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
+  types: Array<any> = [
+    { name: 'Rock' },
+    { name: 'Jazz' },
+    { name: 'Reggae' },
+    { name: 'Ska' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

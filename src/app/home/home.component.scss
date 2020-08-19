@@ -3,17 +3,17 @@
 .row {
   display: flex;
   justify-content: space-evenly;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
   flex-wrap: wrap;
+}
+
+.media-register {
+  height: 44rem;
 }
 
 .col-sm-6 {
   flex-basis: 50%;
   max-width: 50%;
 }
-
 
 #particles-js {
   background-color: #30138b;
