@@ -1,3 +1,5 @@
+@import 'abstracts/mixins';
+
 .page-header {
   background-color: #4158D0;
   background: radial-gradient(circle, rgba(63,94,251,.5) 0%, rgba(252,70,107,.5) 100%),
@@ -30,6 +32,12 @@
   white-space: nowrap;
   border-right: 2px solid #7E2EA0;
   animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 0 4rem;
+    white-space: break-spaces;
+  }
 }
 @keyframes typing {
   from { width: 0 }
