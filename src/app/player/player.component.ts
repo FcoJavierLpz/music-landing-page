@@ -3,26 +3,24 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-player',
   templateUrl: './player.component.html',
-  styleUrls: ['./player.component.scss']
+  styleUrls: ['./player.component.scss'],
 })
 export class PlayerComponent implements OnInit {
   files: Array<any> = [
-    { name: "First Song", artist: "Inder" },
-    { name: "Second Song", artist: "You" }
+    { name: 'First Song', artist: 'Inder' },
+    { name: 'Second Song', artist: 'You' },
   ];
   state;
   currentFile: any = {};
 
-  isFirstPlaying() {
+  isFirstPlaying(): any {
     return false;
   }
-  isLastPlaying() {
+  isLastPlaying(): any {
     return true;
   }
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
